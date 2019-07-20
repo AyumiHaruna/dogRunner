@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Dog Runner</title>
+    <link rel="shortcut icon" href="https://ayumiharuna.github.io/dogRunner/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="https://ayumiharuna.github.io/dogRunner/TemplateData/style.css">
+    <script src="https://ayumiharuna.github.io/dogRunner/TemplateData/UnityProgress.js"></script>
+    <script src="https://ayumiharuna.github.io/dogRunner/Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/DogRunner.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Dog Runner</div>
+      </div>
+    </div>
+
+    <div class="infoSquare">
+      <h4>Dog Runner</h4>
+      Dog Runner es un juego basado en el juego del dinosaurio de Chrome, nuestro segundo intento de desarrollar un
+      mininjuego en Unity. <br><br>
+
+      <i>Controles: Click izquierdo para saltar</i><br><br>
+
+      Nuevamente <a href="https://twitter.com/Goenji25Shuuya" target="_blank">@Goenji25Shuuya (Usagi San)</a> me apoyó con el Pixelart
+      y yo <a href="https://twitter.com/YumiHeiress" target="_blank">@YumiHeiress (Ayumi) </a> trabajé el código. <br>
+      Gracias por jugar.<br><br>
+
+      No poseo los derechos de la música de fondo y solo la usé por que es un proyecto de prueba.
+      La canción es <a href="https://www.youtube.com/watch?v=QxU0eHnQjo8">F-Zero:  Mute City theme</a> <br>
+      producido por Nintendo para la consola SNES en el año 1991
+    </div>
+  </body>
+</html>
